@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Information</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Change to your desired background color */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Delivery Information</h1>
+        <p>Please select your delivery location:</p>
+        
+        <!-- Location dropdown -->
+        <select id="location">
+            <option value="chennai">Chennai</option>
+            <option value="other_states">Other States</option>
+            <option value="other_countries">Other Countries</option>
+        </select>
+        
+        <!-- Additional content for Chennai -->
+        <div id="chennaiContent" style="display: none;">
+            <p>Delivery information for Chennai:</p>
+            <!-- Add specific information for Chennai here -->
+        </div>
+        
+        <!-- Additional content for Other States -->
+        <div id="otherStatesContent" style="display: none;">
+            <p>Delivery information for other states:</p>
+            <!-- Add specific information for other states here -->
+        </div>
+        
+        <!-- Additional content for Other Countries -->
+        <div id="otherCountriesContent" style="display: none;">
+            <p>Delivery information for other countries:</p>
+            <!-- Add specific information for other countries here -->
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to show/hide content based on location selection
+        const locationDropdown = document.getElementById("location");
+        const chennaiContent = document.getElementById("chennaiContent");
+        const otherStatesContent = document.getElementById("otherStatesContent");
+        const otherCountriesContent = document.getElementById("otherCountriesContent");
+
+        locationDropdown.addEventListener("change", function() {
+            const selectedLocation = locationDropdown.value;
+
+            // Hide all content first
+            chennaiContent.style.display = "none";
+            otherStatesContent.style.display = "none";
+            otherCountriesContent.style.display = "none";
+
+            // Show content based on the selected location
+            if (selectedLocation === "chennai") {
+                chennaiContent.style.display = "block";
+            } else if (selectedLocation === "other_states") {
+                otherStatesContent.style.display = "block";
+            } else if (selectedLocation === "other_countries") {
+                otherCountriesContent.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
