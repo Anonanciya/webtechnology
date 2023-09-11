@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <style>
+        /* Your CSS styles here */
+
+        /* Add a navigation bar for the categories */
+        .navbar {
+            background-color:black;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color:aliceblue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Container for image and text */
+        .image-container {
+            display: flex; /* Use flex layout */
+            align-items: center; /* Align items vertically */
+        }
+
+        /* Style for the text content */
+        .image-content {
+            flex-grow: 1; /* Allow co0tent to grow and fill available space */
+            padding: 20px; /* Add some padding for spacing */
+        }
+
+        .image-container p {
+            margin-top: 10px;
+            font-size: 25px;
+        }
+
+        .text-container h2 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .text-container h3 {
+            font-weight:normal;
+            font-size: 20px;
+        }
+
+        body {
+            background-color: lightcyan; /* Change this color to your desired background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for right-aligned image */
+        .right-image {
+            margin-left: auto;
+            margin-right: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation bar for categories -->
+    <div class="navbar">
+        <a href="#wedding-flower">Wedding Flower</a>
+        <a href="#consultation">Consultation</a>
+        <a href="#our-services">our Service</a>
+    </div>
+
+    <div class="container">
+        <!-- Text container -->
+        <div class="text-container">
+            <h2>CORPORATE AND EVENTS</h2>
+            <img src="newshop.jpg" alt="FLOWERS" width="800px" height="700px">
+            <p style="font-size: 20px; font-style: normal; font-family: 'Times New Roman', serif;">The world’s finest flowers delivered to your door with Bloom Waves. Creators of bespoke bouquets since 1876, we’ve been helping generations of customers celebrate life’s most important moments in style. Discover our range of luxury designs and award-winning British blooms.</p>
+        </div>
+        
+        <!-- Image container for Wedding Flower -->
+        <div class="image-container" id="wedding-flower">
+            <img src="wedflower.jpg" alt="Wedding Flower" width="500px" height="500px" class="right-image">
+            <div class="image-content">
+                <h2>Wedding Flower</h2>
+                <p>Celebrate the most important day of your life with wedding flowers from London’s oldest and most prestigious florist. We offer delivery across the capital and the UK, bringing exceptional floral designs to couples up and down the country.</p>
+                <h3>PERFECT WEDDING DAY</h3>
+                <p>We have been creating luxury wedding designs for well over a century. As a prominent London florist with a rich history, we provide all the experience and expertise to ensure your wedding flowers are simply spectacular.</p>
+                <p>From large-scale events to intimate celebrations, our team of international designers is dedicated to providing all the necessary inspiration, guidance, and creative flair for truly exquisite wedding arrangements.</p>
+            </div>
+        </div>
+
+       <!-- Image container for Consultation -->
+        <div class="image-container" id="consultation">
+            <img src="consultant.jpg" alt="Consultation" width="500px" height="500px">
+            <div class="image-content">
+                <h2>Consultation</h2>
+                <p>Meet the team and browse our extensive portfolio of previous weddings over a coffee or glass of champagne. Discuss your requirements, prices, and seasonal availability of flowers with our wedding florists. Take a stroll around our Elizabeth Street store and get a feel for the truly unique style.</p>
+                <h3>PREPARATION</h3>
+                <p>Should you choose us as your wedding flower supplier, we will immediately begin preparation for the big day. A mood board created for inspiration will be followed by a further consultation and the opportunity to view a mock-up bouquet before the designs are finalized.</p>
+                <h3>CELEBRATION</h3>
+                <p>On the day of the ceremony, the flowers will be arranged by a team of florists before being loaded, delivered, and installed at the venue(s) before being removed by the team at the end of the evening.</p>
+            </div>
+        </div>
+
+        <!-- Image container for Our Services -->
+        <div class="image-container" id="our-services">
+            <img src="bride.jpg" alt="Our Service" width="500px" height="800px" class="right-image">
+            <div class="image-content">
+                <h2>Our Service</h2>
+                <h3>CHRUCH STYLEING</h3>
+                <p>On the day of the ceremony, the flowers will be arranged by a team of florists before being loaded, delivered, and installed at the venue(s) before being removed by the team at the end of the evening.</p>
+                <h3>BUTTON HOLES</h3>
+                <p>Timeless and traditional, our buttonholes offer a superb flourish for the groom and groomsmen alike.</p>
+                <h3>TABLE ARRANGEMENTS</h3>
+                <p>Dazzle your guests with table arrangements from Moyses Stevens. Whatever your color scheme or preference, we have the perfect designs for you.</p>
+                <h3>BRIDAL BOUQUESTS</h3>
+                <p>Your bridal bouquet is an expression of your personality. Whether you want daisies, delphiniums, or dahlias, our bespoke and beautiful designs are created around your personal criteria.</p>
+                <h3>CORSAGES AND HAIR PEICES</h3>
+                <p>Add a touch of class with delicately designed headpieces and corsages, ideal for flower girls and bridesmaids.</p>
+                <h3>BESPOKE DECOR</h3>
+                <p>Flower walls, bespoke installations, and floral sculptures; the world of creative floral design is at your fingertips.</p>
+            </div>
+        </div>
+
+        <div class="container">
+
+
+            <img src="heart.jpg" alt="Our Service" width="1150px" height="800px" class="right-image">
+        </div>
+
+    <div style="clear: both;"></div>
+</body>
+</html>
