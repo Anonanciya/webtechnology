@@ -2,19 +2,19 @@
     <head>
         <style>
             body {
-            background-image: url('basket.jpg'); /* Replace 'your-background-image.jpg' with the path to your image */
-            background-size: cover; /* Adjust the background size to cover the entire body */
-            background-repeat: no-repeat; /* Prevent the background image from repeating */
-            background-attachment: fixed; /* Fixed background position */
+            background-image: url('basket.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
             display: flex;
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            height: 100vh; /* Full viewport height */
-            margin: 0; /* Remove default body margin */
+            justify-content: center; 
+            align-items: center;
+            height: 100vh; 
+            margin: 0; 
         }
 
         .container {
-            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background color to the container */
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 10px;
         }
@@ -32,7 +32,7 @@
                 var gender = document.myform.gender.value;
                 var purpose = document.myform.purpose.value;
                 
-                // Clear previous error messages
+                
                 document.getElementById("firstNameError").textContent = "";
                 document.getElementById("lastNameError").textContent = "";
                 document.getElementById("phnoError").textContent = "";
@@ -43,7 +43,7 @@
                 document.getElementById("genderError").textContent = "";
                 document.getElementById("purpose").textContent = "";
 
-                // Validation for empty fields
+                
                 if (firstName == "") {
                     document.getElementById("firstNameError").textContent = "Please enter your first name.";
                     isValid = false;
@@ -56,7 +56,7 @@
                     document.getElementById("phnoError").textContent = "Please enter your phone number.";
                     isValid = false;
                 } else {
-                    // Phone Number should only contain numeric characters
+                    
                     var str = phno;
                     var x;
                     for (var i = 0; i < str.length; i++) {
@@ -76,7 +76,7 @@
                     document.getElementById("emailError").textContent = "Please enter your email.";
                     isValid = false;
                 } else {
-                    // Email format validation
+                    
                     var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
                     if (!emailPattern.test(email)) {
                         document.getElementById("emailError").textContent = "Invalid email format.";
